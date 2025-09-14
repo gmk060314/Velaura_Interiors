@@ -8122,94 +8122,6 @@ del {
 
 /*# sourceMappingURL=style.css.map */
 
-    .menu-wrapper { 
-        position: relative; 
-        z-index: 1100; 
-        padding: 8px 12px; 
-        display: flex; 
-        align-items: center; 
-    }
-    .logo img { max-height: 48px; height: auto; width: auto; }
-    .main-header .menu-wrapper .logo { 
-        flex: 1 1 auto; 
-        min-width: 0; 
-        display: flex; 
-        align-items: center; 
-    }
-    .main-menu { flex: 2 1 auto; }
-    .header-btns { flex: 0 0 auto; margin-left: 8px; }
-    .mobile_menu { display: block; }
-
-    /* Force hamburger alignment same as About page */
-    .slicknav_menu { 
-        z-index: 1150; 
-        position: absolute; 
-        top: 0; 
-        right: 0; 
-    }
-    .slicknav_btn { 
-        margin-top: 25px !important;   /* same as About */
-        margin-right: -8px !important; 
-        position: relative !important;
-    }
-    .slicknav_nav { width: 100%; box-sizing: border-box; }
-
-    @media (max-width: 575px) {
-        .hero__caption h1 { font-size: 26px !important; line-height: 1.15 !important; }
-        .hero__caption span { font-size: 14px !important; }
-        .logo img { max-height: 42px; }
-        .header-btns { display: none; }
-    }
-    @media (min-width: 576px) and (max-width: 991px) {
-        .hero__caption h1 { font-size: 34px !important; }
-        .logo img { max-height: 44px; }
-    }
-    #back-top { z-index:1200; }
-
-/* Make the page use the full viewport while opting-in to safe areas */
-@supports (padding: max(0px)) {
-  :root {
-    /* expose safe-area variables if viewport-fit=cover is set */
-    --safe-top: env(safe-area-inset-top, 0px);
-    --safe-right: env(safe-area-inset-right, 0px);
-  }
-}
-
-/* Default (desktop/tablet) keeps your current offsets */
-.slicknav_btn {
-  margin-top: 25px !important;
-  margin-right: 20px !important;
-  position: relative !important;
-}
-
-/* iPhone 15 and similar narrow phones: reduce top margin and nudge right */
-@media (max-width: 430px) {
-  .slicknav_btn {
-    margin-top: calc(8px + var(--safe-top));
-    margin-right: calc(8px + var(--safe-right));
-  }
-
-  /* Ensure header layout reserves space for the logo */
-  .header, .navbar, .site-branding {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 8px;
-  }
-
-  /* Prevent overlap by giving the logo measurable width and z-order */
-  .site-logo { max-width: 56vw; z-index: 2; }  /* adjust as needed */
-  .slicknav_btn { z-index: 3; }                /* on top but offset */
-}
-
-/* Header row as flex so logo text and hamburger share a baseline */
-.header, .site-header, .navbar {           /* use the actual header selector used on the site */
-  display: flex;                            /* create a flex row */
-  align-items: baseline;                    /* align to the text baseline */
-  justify-content: space-between;           /* push logo left, button right */
-  gap: 8px;                                 /* small breathing room */
-}
-
 /* Keep previous button styles, then refine for small iPhone viewports */
 @supports (padding: max(0px)) {
   :root {
@@ -8232,3 +8144,7 @@ del {
     margin-right: calc(8px + var(--safe-right));
   }
 }
+
+
+
+
