@@ -8228,3 +8228,20 @@ del {
   .brand, .site-logo{ order: 1; }
 }
 
+/* Make header a safe positioning context and visible */
+.header{ position: relative; overflow: visible; }  /* prevents clipping of absolute children */  /* MDN overflow/position */  /* [MDN] */
+
+/* Ensure the SlickNav wrapper itself is visible at phone widths */
+.slicknav_menu{ display:block; }  /* override themes that hide it by default at some breakpoints */  /* known SlickNav quirk */  /* [StackOverflow] */
+
+/* iPhone portrait: place the hamburger inside the header bounds, above overlays */
+@media (max-width: 430px){
+  .slicknav_btn{
+    position: absolute;     /* must be positioned for z-index to apply */
+    z-index: 1000;          /* above header background overlays */
+    right: 12px;            /* keep it on-screen while testing */
+    top: 6px;               /* visibly within header */
+    margin: 0;
+    transform: none;        /* remove previous translates that may push it off */
+  }
+}
