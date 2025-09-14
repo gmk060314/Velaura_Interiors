@@ -8148,8 +8148,8 @@ del {
         right: 0; 
     }
     .slicknav_btn { 
-        margin-top: 30px !important;   /* same as About */
-        margin-right: -10px !important; 
+        margin-top: 50px !important;   /* same as About */
+        margin-right: 1px !important; 
         position: relative !important;
     }
     .slicknav_nav { width: 100%; box-sizing: border-box; }
