@@ -8165,3 +8165,39 @@ del {
         .logo img { max-height: 44px; }
     }
     #back-top { z-index:1200; }
+
+/* Make the page use the full viewport while opting-in to safe areas */
+@supports (padding: max(0px)) {
+  :root {
+    /* expose safe-area variables if viewport-fit=cover is set */
+    --safe-top: env(safe-area-inset-top, 0px);
+    --safe-right: env(safe-area-inset-right, 0px);
+  }
+}
+
+/* Default (desktop/tablet) keeps your current offsets */
+.slicknav_btn {
+  margin-top: 25px !important;
+  margin-right: 20px !important;
+  position: relative !important;
+}
+
+/* iPhone 15 and similar narrow phones: reduce top margin and nudge right */
+@media (max-width: 430px) {
+  .slicknav_btn {
+    margin-top: calc(8px + var(--safe-top));
+    margin-right: calc(8px + var(--safe-right));
+  }
+
+  /* Ensure header layout reserves space for the logo */
+  .header, .navbar, .site-branding {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  /* Prevent overlap by giving the logo measurable width and z-order */
+  .site-logo { max-width: 56vw; z-index: 2; }  /* adjust as needed */
+  .slicknav_btn { z-index: 3; }                /* on top but offset */
+}
