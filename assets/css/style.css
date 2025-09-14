@@ -8122,69 +8122,6 @@ del {
 
 /*# sourceMappingURL=style.css.map */
 
-    .menu-wrapper { 
-        position: relative; 
-        z-index: 1100; 
-        padding: 8px 12px; 
-        display: flex; 
-        align-items: center; 
-    }
-    .logo img { max-height: 48px; height: auto; width: auto; }
-    .main-header .menu-wrapper .logo { 
-        flex: 1 1 auto; 
-        min-width: 0; 
-        display: flex; 
-        align-items: center; 
-    }
-    .main-menu { flex: 2 1 auto; }
-    .header-btns { flex: 0 0 auto; margin-left: 8px; }
-    .mobile_menu { display: block; }
-
-    /* Force hamburger alignment same as About page */
-    .slicknav_menu { 
-        z-index: 1150; 
-        position: absolute; 
-        top: 0; 
-        right: 0; 
-    }
-    .slicknav_btn { 
-        margin-top: 55px !important;   /* same as About */
-        margin-right: -1px !important; 
-        position: relative !important;
-    }
-    .slicknav_nav { width: 100%; box-sizing: border-box; }
-
-    @media (max-width: 575px) {
-        .hero__caption h1 { font-size: 26px !important; line-height: 1.15 !important; }
-        .hero__caption span { font-size: 14px !important; }
-        .logo img { max-height: 42px; }
-        .header-btns { display: none; }
-    }
-    @media (min-width: 576px) and (max-width: 991px) {
-        .hero__caption h1 { font-size: 34px !important; }
-        .logo img { max-height: 44px; }
-    }
-    #back-top { z-index:1200; }
-	
-	/* CSS */
-.loader{
-  position: fixed;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  background: rgba(0,0,0,.6);
-  z-index: 9999;
-}
-.loader img{
-  width: 64px;
-  height: 64px;
-  image-rendering: -webkit-optimize-contrast; /* Safari crispness */
-}
-@media (prefers-reduced-motion: reduce){
-  .loader img{ display:none; }
-  .loader{ background: rgba(0,0,0,.6); }
-}
-
 /* Make the page use the full viewport while opting-in to safe areas */
 @supports (padding: max(0px)) {
   :root {
@@ -8220,3 +8157,24 @@ del {
   .site-logo { max-width: 56vw; z-index: 2; }  /* adjust as needed */
   .slicknav_btn { z-index: 3; }                /* on top but offset */
 }
+	
+	/* CSS */
+.loader{
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: rgba(0,0,0,.6);
+  z-index: 9999;
+}
+.loader img{
+  width: 64px;
+  height: 64px;
+  image-rendering: -webkit-optimize-contrast; /* Safari crispness */
+}
+@media (prefers-reduced-motion: reduce){
+  .loader img{ display:none; }
+  .loader{ background: rgba(0,0,0,.6); }
+}
+
+
