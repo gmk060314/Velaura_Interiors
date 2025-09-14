@@ -8201,3 +8201,34 @@ del {
   .site-logo { max-width: 56vw; z-index: 2; }  /* adjust as needed */
   .slicknav_btn { z-index: 3; }                /* on top but offset */
 }
+
+/* Header row as flex so logo text and hamburger share a baseline */
+.header, .site-header, .navbar {           /* use the actual header selector used on the site */
+  display: flex;                            /* create a flex row */
+  align-items: baseline;                    /* align to the text baseline */
+  justify-content: space-between;           /* push logo left, button right */
+  gap: 8px;                                 /* small breathing room */
+}
+
+/* Keep previous button styles, then refine for small iPhone viewports */
+@supports (padding: max(0px)) {
+  :root {
+    --safe-top: env(safe-area-inset-top, 0px);
+    --safe-right: env(safe-area-inset-right, 0px);
+  }
+}
+
+.slicknav_btn {
+  position: relative;                        /* stays in the flow within the header */
+  margin: 0;                                 /* let flex handle spacing */
+  vertical-align: baseline;                  /* inline-baseline fallback if needed */
+}
+
+/* iPhone 15 and similar portrait widths */
+@media (max-width: 430px) {
+  .slicknav_btn {
+    /* nudge the button so its top edge sits just below the logo baseline/end of “A” */
+    transform: translateY(4px);              /* adjust 2–6px based on what looks perfect */
+    margin-right: calc(8px + var(--safe-right));
+  }
+}
