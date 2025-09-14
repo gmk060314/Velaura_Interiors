@@ -8178,7 +8178,7 @@ del {
 /* Default (desktop/tablet) keeps your current offsets */
 .slicknav_btn {
   margin-top: 25px !important;
-  margin-right: 20px !important;
+  margin-right: 8px !important;
   position: relative !important;
 }
 
