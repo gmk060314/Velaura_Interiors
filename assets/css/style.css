@@ -8148,7 +8148,7 @@ del {
         right: 0; 
     }
     .slicknav_btn { 
-        margin-top: 15px !important;   /* same as About */
+        margin-top: 25px !important;   /* same as About */
         margin-right: 10px !important; 
         position: relative !important;
     }
