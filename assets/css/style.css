@@ -8149,7 +8149,7 @@ del {
     }
     .slicknav_btn { 
         margin-top: 15px !important;   /* same as About */
-        margin-right: -8px !important; 
+        margin-right: 10px !important; 
         position: relative !important;
     }
     .slicknav_nav { width: 100%; box-sizing: border-box; }
