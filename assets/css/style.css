@@ -8186,19 +8186,86 @@ del {
 }
 
 
-/* Header becomes positioning context; keep baseline alignment */
-.header{ position: relative; display:flex; align-items: baseline; }   /* MDN position/flex */  /* ensures absolute children use header as reference */  /* place this near the end */ /* [MDN] */ 
+/* Header container: allow wrap when space is tight */
+.header, .site-header, .navbar {           /* use your actual header selector */
+  display: flex;
+  flex-flow: row wrap;                      /* allows second line if needed */
+  align-items: center;                      /* keeps items aligned nicely */
+  justify-content: space-between;
+}
 
-/* Tight wrapper around the wordmark/logo */
-.brand{ display:inline-block; position: relative; }                   /* keeps box tight to logo end */
+/* Brand takes the first line and can grow */
+.brand, .site-logo {
+  flex: 1 1 auto;                           /* consume available space */
+  min-width: 0;                             /* avoid overflow */
+}
 
-/* iPhone portrait widths: pin hamburger under end of logo */
+/* Hamburger sits on the same line when room exists, otherwise moves below */
+.slicknav_btn {
+  flex: 0 0 auto;                           /* fixed-size item */
+  position: relative;
+  z-index: 3;                               /* above background, not above logo */
+  margin: 6px 12px 0 0;                     /* top/right space (tweak if needed) */
+}
+
+/* Prevent covering: guarantee header height at least the logo + button */
+.header {
+  row-gap: 4px;                             /* small gap between wrapped lines */
+}
+
+/* Narrow iPhone widths: place the button right-aligned on its own line under the logo end */
 @media (max-width: 430px){
-  .slicknav_btn{
-    position: absolute;   /* take out of flex so it won't be pushed right */
-    left: calc( var(--brand-width, 228px) );  /* set 228px to the measured logo width on phone */
-    top: 4px;             /* drop slightly below the baseline; tweak 2–6px */
-    margin: 0;
-    z-index: 3;
+  .header{
+    align-items: center;
   }
+  .slicknav_btn{
+    order: 2;                                /* after logo */
+    width: auto;
+    align-self: flex-end;                    /* align to the right edge */
+    margin-top: 2px;                         /* sits just under the A */
+    transform: translateY(2px);              /* micro nudge; adjust 1–3px as needed */
+  }
+  .brand, .site-logo{ order: 1; }
+}
+
+/* Header container: allow wrap when space is tight */
+.header, .site-header, .navbar {           /* use your actual header selector */
+  display: flex;
+  flex-flow: row wrap;                      /* allows second line if needed */
+  align-items: center;                      /* keeps items aligned nicely */
+  justify-content: space-between;
+}
+
+/* Brand takes the first line and can grow */
+.brand, .site-logo {
+  flex: 1 1 auto;                           /* consume available space */
+  min-width: 0;                             /* avoid overflow */
+}
+
+/* Hamburger sits on the same line when room exists, otherwise moves below */
+.slicknav_btn {
+  flex: 0 0 auto;                           /* fixed-size item */
+  position: relative;
+  z-index: 3;                               /* above background, not above logo */
+  margin: 6px 12px 0 0;                     /* top/right space (tweak if needed) */
+}
+
+/* Prevent covering: guarantee header height at least the logo + button */
+.header {
+  row-gap: 4px;                             /* small gap between wrapped lines */
+}
+
+/* Narrow iPhone widths: place the button right-aligned on its own line under the logo end */
+@media (max-width: 430px){
+  .header{
+    align-items: center;
+  }
+  .slicknav_btn{
+    order: 2;                                /* after logo */
+    width: auto;
+    align-self: flex-end;                    /* align to the right edge */
+    margin-top: 2px;                         /* sits just under the A */
+    transform: translateY(2px);              /* micro nudge; adjust 1–3px as needed */
+  }
+  .brand, .site-logo{ order: 1; }
 }
