@@ -8122,49 +8122,20 @@ del {
 
 /*# sourceMappingURL=style.css.map */
 
-   .menu-wrapper { 
-        position: relative; 
-        z-index: 1100; 
-        padding: 8px 12px; 
-        display: flex; 
-        align-items: center; 
-    }
-    .logo img { max-height: 48px; height: auto; width: auto; }
-    .main-header .menu-wrapper .logo { 
-        flex: 1 1 auto; 
-        min-width: 0; 
-        display: flex; 
-        align-items: center; 
-    }
-    .main-menu { flex: 2 1 auto; }
-    .header-btns { flex: 0 0 auto; margin-left: 8px; }
-    .mobile_menu { display: block; }
+/* 1) Make the header a flex row */
+.header { display:flex; align-items:baseline; justify-content:space-between; gap:8px; }  /* use the real selector */  /* aligns to same baseline */ [3][6]
 
-    /* Force hamburger alignment same as About page */
-    .slicknav_menu { 
-        z-index: 1150; 
-        position: absolute; 
-        top: 0; 
-        right: 0; 
-    }
-    .slicknav_btn { 
-        margin-top: 50px !important;   /* same as About */
-        margin-right: -15px !important; 
-        position: relative !important;
-    }
-    .slicknav_nav { width: 100%; box-sizing: border-box; }
+/* 2) Wrap the wordmark in a tight container so its width equals the visible logo */
+.brand { display:inline-block; }  /* prevents extra inline whitespace */ [15]
 
-    @media (max-width: 575px) {
-        .hero__caption h1 { font-size: 26px !important; line-height: 1.15 !important; }
-        .hero__caption span { font-size: 14px !important; }
-        .logo img { max-height: 42px; }
-        .header-btns { display: none; }
-    }
-    @media (min-width: 576px) and (max-width: 991px) {
-        .hero__caption h1 { font-size: 34px !important; }
-        .logo img { max-height: 44px; }
-    }
-    #back-top { z-index:1200; }
+/* 3) Precisely place the hamburger under the end of the logo on iPhone widths */
+@media (max-width: 430px){
+  .slicknav_btn{
+    position: relative;              /* stays in flow */
+    top: 4px;                        /* sit slightly below the logo baseline; tweak 2–6px */
+    margin-right: 10px;              /* safe breathing room */
+  }
+}
 
 /* CSS */
 .loader{
