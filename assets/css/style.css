@@ -8148,8 +8148,8 @@ del {
         right: 0; 
     }
     .slicknav_btn { 
-        margin-top: 15px !important;   /* same as About */
-        margin-right: -8px !important; 
+        margin-top: 1px !important;   /* same as About */
+        margin-right: 0px !important; 
         position: relative !important;
     }
     .slicknav_nav { width: 100%; box-sizing: border-box; }
@@ -8185,38 +8185,6 @@ del {
   .loader{ background: rgba(0,0,0,.6); }
 }
 
-/* 1) Make the header a flex row */
-.header { display:flex; align-items:baseline; justify-content:space-between; gap:8px; }  /* use the real selector */  /* aligns to same baseline */ [3][6]
 
-/* 2) Wrap the wordmark in a tight container so its width equals the visible logo */
-.brand { display:inline-block; }  /* prevents extra inline whitespace */ [15]
-
-/* 3) Precisely place the hamburger under the end of the logo on iPhone widths */
-@media (max-width: 430px){
-  .slicknav_btn{
-    position: relative;              /* stays in flow */
-    top: 4px;                        /* sit slightly below the logo baseline; tweak 2–6px */
-    margin-right: -20px;              /* safe breathing room */
-  }
-}
-
-/* CSS */
-.loader{
-  position: fixed;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  background: rgba(0,0,0,.6);
-  z-index: 9999;
-}
-.loader img{
-  width: 64px;
-  height: 64px;
-  image-rendering: -webkit-optimize-contrast; /* Safari crispness */
-}
-@media (prefers-reduced-motion: reduce){
-  .loader img{ display:none; }
-  .loader{ background: rgba(0,0,0,.6); }
-}
 
 
