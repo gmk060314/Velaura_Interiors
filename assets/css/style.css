@@ -8196,7 +8196,7 @@ del {
   .slicknav_btn{
     position: relative;              /* stays in flow */
     top: 4px;                        /* sit slightly below the logo baseline; tweak 2–6px */
-    margin-right: 10px;              /* safe breathing room */
+    margin-right: -20px;              /* safe breathing room */
   }
 }
 
