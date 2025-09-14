@@ -8166,6 +8166,23 @@ del {
     }
     #back-top { z-index:1200; }
 
-
+/* CSS */
+.loader{
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: rgba(0,0,0,.6);
+  z-index: 9999;
+}
+.loader img{
+  width: 64px;
+  height: 64px;
+  image-rendering: -webkit-optimize-contrast; /* Safari crispness */
+}
+@media (prefers-reduced-motion: reduce){
+  .loader img{ display:none; }
+  .loader{ background: rgba(0,0,0,.6); }
+}
 
 
