@@ -39,6 +39,12 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
+	
+	<!-- Fancybox CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+/>
 
     <!-- Inline responsive + small behavior fixes -->
 
@@ -69,9 +75,9 @@
       "priceRange": "Varies",
       "openingHours": "Mo-Su 10:00-20:00",
       "sameAs": [
-        "https://www.instagram.com/veluara_interiors",
-        "https://twitter.com/veluara_interior",
-        "https://www.facebook.com/",
+        "https://www.instagram.com/velaura_interiors/",
+        "https://twitter.com/velaurainterior/",
+        "https://www.facebook.com/velaurainteriors/",
         "https://www.youtube.com/@velaurainteriors"
       ]
     }
@@ -160,10 +166,10 @@
     <meta property="og:image" content="https://www.velaurainteriors.com/assets/img/logo/logo1.png">
     <meta property="og:locale" content="en_IN">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@veluara_interior">
+    <meta name="twitter:site" content="@velaurainterior">
     <meta name="twitter:title" content="Velaura Interiors — Interior Designer in Chennai">
     <meta name="twitter:description" content="Chennai-based home & commercial interior design specializing in durable, modern interiors.">
-
+	
 </head>
 <body class="body-bg">
 <!--? Preloader Start -->
@@ -227,7 +233,11 @@
                     <div class="row">
                         <div class="col-xl-6 col-lg-6">
                             <div class="hero__caption">
-                                <span data-animation="fadeInLeft" data-delay=".4s">Welcome to <strong>V<span style="color:red;">E</span>l<span style="color:red;">A</span>ura Interiors</strong></span>
+							<span data-animation="fadeInLeft" data-delay=".4s">
+								<strong style="font-weight:700;">
+									Welcome to V<span style="color:#e30000; font-weight:700;">E</span>L<span style="color:#e30000; font-weight:700;">A</span>URA Interiors
+								</strong>
+							</span>
                                 <h1 data-animation="fadeInLeft" data-delay=".6s">Modern Interior & Design</h1>
                             </div>
                         </div>
@@ -240,7 +250,11 @@
                     <div class="row">
                         <div class="col-xl-6 col-lg-6">
                             <div class="hero__caption">
-                                <span data-animation="fadeInLeft" data-delay=".4s">Welcome to Velaura Interiors</span>
+							<span data-animation="fadeInLeft" data-delay=".4s">
+								<strong style="font-weight:700;">
+									Welcome to V<span style="color:#e30000; font-weight:700;">E</span>L<span style="color:#e30000; font-weight:700;">A</span>URA Interiors
+								</strong>
+							</span>
                                 <h1 data-animation="fadeInLeft" data-delay=".6s">Modern Interior & Design</h1>
                             </div>
                         </div>
@@ -249,10 +263,14 @@
             </div>
         </div>
         <!-- Video icon -->
-        <div class="video-icon">
-            <a class="popup-video btn-icon" href="https://youtu.be/jr3m3Puj3VE?si=wVYMujWC9hLW--BF" aria-label="Play intro video"><i class="fas fa-play"></i></a>
-			
-        </div>
+			<div class="video-icon">
+			  <a data-fancybox
+				 data-src="https://www.youtube.com/watch?v=jr3m3Puj3VF"
+				 class="btn-icon"
+				 aria-label="Play intro video">
+				 <i class="fas fa-play"></i>
+			  </a>
+			</div>
     </div>
     <!-- slider Area End-->
     <!--? our info Start -->
@@ -329,8 +347,8 @@
                             </div>
                             <div class="services-caption">
                             <h3><a href="services.html">Ambient Lighting</a></h3>
-                            <p class="pera1">Custom lighting designs that set the mood and highlight every detail. </p>
-                            
+                            <p class="pera1">Custom lighting designs </p>
+                            <p class="pera2">Custom lighting designs that set the mood and highlight every detail. </p>
                         </div>
                     </div>
                 </div>
@@ -341,7 +359,8 @@
                             </div>
                             <div class="services-caption">
                             <h3><a href="services.html">Bedroom Interiors</a></h3>
-                            <p class="pera1">Personalized bedroom spaces with comfort, style, and functionality. </p>
+                            <p class="pera1">Personalized bedroom spaces </p>
+							<p class="pera2">Personalized bedroom spaces with comfort, style, and functionality. </p>
 
                         </div>
                     </div>
@@ -353,7 +372,8 @@
                             </div>
                             <div class="services-caption">
                             <h3><a href="services.html">Workplace Interiors</a></h3>
-                            <p class="pera1">Modern office designs that boost productivity and reflect professionalism. </p>
+                            <p class="pera1">Modern office designs  </p>
+							<p class="pera2">Modern office designs that boost productivity and reflect professionalism. </p>
 
                         </div>
                     </div>
@@ -551,7 +571,7 @@
                             <!-- logo -->
                             <div class="footer-logo" style="display:flex; align-items:center;">
                                 <a href="index.html" style="display:flex; align-items:center; text-decoration:none;">
-									<img src="assets/img/logo/logo2_footer.png" alt="Velaura footer icon" style="height:45px; width:auto;margin-left:-10px;">
+									<img src="assets/img/logo/logo2_footer.png" alt="Velaura footer icon" style="height:45px; width:65px;margin-left:-10px;">
 									<img src="assets/img/logo/logo3_footer.png" alt="Velaura footer" style="height:45px;;width:auto;margin-left:-10px;">
 								</a>
                             </div>
@@ -561,9 +581,29 @@
                                 </div>
                             </div>
                             <div class="footer-number">
-                                <h4><span>+91 </span>89251 22237</h4>
-                                <p>info@www.velaurainteriors.com</p>
-								<p>insta @veluara_interiors</p>
+							<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-5bH0..." crossorigin="anonymous" referrerpolicy="no-referrer">
+
+							<div class="footer-number">
+							  <h4 class="contact-line">
+								<i class="fa-solid fa-phone"></i>
+								<a href="tel:+918925122237"><span style="color:#ffffff; font-weight:auto;">+91</span> 89251 22237</a>
+							  </h4>
+
+							  <p class="contact-line">
+								<i class="fa-regular fa-envelope"></i>
+								<a href="mailto:info@velaurainteriors.com">info@velaurainteriors.com</a>
+							  </p>
+
+								<p class="contact-line insta">
+								  <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+								  <a href="https://www.instagram.com/velaura_interiors/" target="_blank" rel="noopener">insta @velaura_interiors</a>
+							</div>
+								<!-- Load FA6 (once in <head>) watsapp-->
+								<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-5bH0..." crossorigin="anonymous" referrerpolicy="no-referrer">
+								<a href="https://wa.me/918925122237?text=Hi%20I%20want%20to%20enquire%20about%20Velaura%20Interiors"
+								   class="wa-btn" target="_blank" rel="noopener" aria-label="WhatsApp">
+								  <i class="fa-brands fa-whatsapp"></i>
+								</a>
                             </div>
 							
                         </div>
@@ -578,7 +618,9 @@
                                 <p>47, V.V.Koil Street, Chinmaya Nagar Stage 1, Virugambakkam, Chennai 600092.</p>
 									<p>Available in 365 Days</p>
 									<p>10:00AM TO 8:00PM</p>
+									
                             </div>
+
 
                             <div class="footer-cap">
                                 <span></span>
@@ -620,9 +662,10 @@
                         <!-- Footer Social -->
                         <div class="footer-social f-right">
                             <span>Follow Us</span>
-							<a href="https://www.instagram.com/veluara_interiors" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-							<a href="https://twitter.com/veluara_interior" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
-							<a href="https://www.facebook.com/" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+							<a href="https://www.instagram.com/velaura_interiors/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+							<a href="https://twitter.com/velaurainterior/" target="_blank" rel="noopener" aria-label="X (formerly Twitter)">
+							<i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+							<a href="https://www.facebook.com/velaurainteriors/" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
 							<a href="https://www.youtube.com/@velaurainteriors" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>						
                         </div>
                     </div>
@@ -690,6 +733,7 @@
             });
         })(jQuery);
     </script>
-
+<!-- Fancybox JS -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
 </body>
 </html>
