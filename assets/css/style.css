@@ -558,7 +558,7 @@ hr {
 
 /* line 295, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
 a:hover {
-  color: #000;
+  color: #ff1313;
 }
 
 /* line 298, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
@@ -4746,7 +4746,7 @@ hero-btn {
   color: #bdbdbd;
   font-size: 14px;
   text-align: center;
-  margin-left: 16px;
+  margin-left: 8px;
 }
 
 /* line 162, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_footer.scss */
@@ -7929,6 +7929,7 @@ del {
   border-radius: 8px;
   background: #f9f9ff;
   position: relative;
+
   cursor: pointer;
 }
 
@@ -8159,6 +8160,7 @@ del {
         .hero__caption span { font-size: 14px !important; }
         .logo img { max-height: 42px; }
         .header-btns { display: none; }
+		
     }
     @media (min-width: 576px) and (max-width: 991px) {
         .hero__caption h1 { font-size: 34px !important; }
@@ -8269,3 +8271,50 @@ del {
   }
   .brand, .site-logo{ order: 1; }
 }
+
+
+/* WhatsApp green button */
+.wa-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:44px; height:44px;
+  background:#25D366;          /* WhatsApp green */
+  color:#fff;                   /* icon color */
+  border-radius:10px;           /* rounded square */
+  text-decoration:none;
+}
+.wa-btn i{ font-size:22px; line-height:1; }
+/* Optional: hover */
+.wa-btn:hover{ filter:brightness(0.95); }
+
+.contact-line{
+  display:flex; align-items:center; gap:10px; margin:10px 0;
+  color:#E6E6E6;
+}
+.contact-line.phone{ color:#e53935; }           /* phone number red */
+.contact-line .isd{ color:#ffffff; font-weight:700; } /* +91 white */
+
+.contact-line i{ font-size:18px; }
+.contact-line.phone i{ color:#25D366; }   /* phone icon green */
+.contact-line.email i{ color:#ffffff; }   /* mail icon white */
+.contact-line.insta i{ color:#E1306C; }   /* instagram icon pink */
+
+
+.video-icon .btn-icon i {
+  color: #ffffff;             /* white play icon (normal) */
+  font-size: 17px;
+  transition: color 0.2s ease;
+}
+
+/* Hover effect */
+.video-icon .btn-icon:hover {
+  background-color: #ffffff;  /* circle turns white on hover */
+}
+
+.video-icon .btn-icon:hover i {
+  color: #ff0000;             /* play icon turns red on hover */
+}
+
+
+
