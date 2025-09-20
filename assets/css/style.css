@@ -506,7 +506,7 @@ hr {
 
 /* line 245, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
 .btn {
-  background: #EF4849;
+  background: #ff1313;
   padding: 27px 44px;
   text-transform: uppercase;
   font-family: "Barlow Condensed", sans-serif;
@@ -558,7 +558,7 @@ hr {
 
 /* line 295, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
 a:hover {
-  color: #EF4849;
+  color: #ff1313;
 }
 
 /* line 298, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
@@ -722,7 +722,7 @@ hero-btn {
 /* scrollUp */
 /* line 423, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_common.scss */
 #scrollUp, #back-top {
-  background: #EF4849;
+  background: #ff1313;
   height: 50px;
   width: 50px;
   right: 31px;
@@ -3269,7 +3269,7 @@ hero-btn {
 
 /* line 71, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_headerMenu.scss */
 .header-area .menu-wrapper .main-menu ul li:hover > a {
-  color: #EF4849;
+  color: #ff1313;
 }
 
 /* line 75, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_headerMenu.scss */
@@ -3724,7 +3724,7 @@ hero-btn {
 
 /* line 211, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_h1-hero.scss */
 .video-icon a {
-  background: #EF4849;
+  background: #ff1313;
   color: #fff;
   width: 80px;
   height: 80px;
@@ -4078,7 +4078,7 @@ hero-btn {
 
 /* line 1, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_wantTowork.scss */
 .wantToWork-area {
-  background: #EF4849;
+  background: #ff1313;
 }
 
 /* line 4, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_wantTowork.scss */
@@ -4318,7 +4318,7 @@ hero-btn {
   left: -47px;
   top: 50%;
   transform: translateY(-50%);
-  background: #EF4849;
+  background: #ff1313;
 }
 
 /* line 33, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_team.scss */
@@ -4412,7 +4412,7 @@ hero-btn {
 
 /* line 54, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_testimonial.scss */
 .testimonial-area .testimonial-caption .testimonial-founder .founder-img span {
-  color: #EF4849;
+  color: #ff1313;
   font-size: 18px;
   line-height: 1;
   display: block;
@@ -4570,7 +4570,7 @@ hero-btn {
 
 /* line 10, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_footer.scss */
 .footer-area .footer-top .single-footer-caption .footer-number h4 {
-  color: #EF4849;
+  color: #ff1313;
   font-size: 30px;
   font-weight: 500;
   text-transform: capitalize;
@@ -4657,7 +4657,7 @@ hero-btn {
 
 /* line 69, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_footer.scss */
 .footer-area .footer-top .single-footer-caption .footer-cap span {
-  color: #EF4849;
+  color: #ff1313;
   font-size: 16px;
   font-weight: 300;
   margin-bottom: 10px;
@@ -4687,12 +4687,12 @@ hero-btn {
 
 /* line 95, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_footer.scss */
 .footer-area .footer-bottom .footer-copy-right p i {
-  color: #EF4849;
+  color: #ff1313;
 }
 
 /* line 98, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_footer.scss */
 .footer-area .footer-bottom .footer-copy-right p a {
-  color: #EF4849;
+  color: #ff1313;
 }
 
 /* line 110, ../../../sponDon TI/Running Project/263.InteriorDesign_HTML/HTML/assets/scss/_footer.scss */
@@ -8338,10 +8338,10 @@ del {
 
 /* Hover effect (already working) */
 #navigation li a:hover {
-    color: #EF4849;
+    color: #ff1313;
 }
 
 /* Keep active page highlighted */
 #navigation li.active > a {
-    color: #EF4849;
+    color: #ff1313;
 }
