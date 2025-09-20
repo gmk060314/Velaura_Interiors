@@ -8344,4 +8344,8 @@ del {
 /* Keep active page highlighted */
 #navigation li.active > a {
     color: #ff1313;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> parent of 27cab28 (Delete assets directory)
